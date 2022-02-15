@@ -115,6 +115,7 @@ if(BUILD_LIBSYSTEMD)
 endif()
 target_link_libraries(sdbus-c++-objlib
         PUBLIC
+            atomic
             Systemd::Libsystemd
             Threads::Threads)
 
